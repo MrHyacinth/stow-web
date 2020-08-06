@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>STOW: Status Page</title>
+    </head>
+    <body>
+        <h2>STOW: Transaction Leg Server Response</h2>
+        <table>
+            
+                <tr>
+                    <td>Amount</td>
+                    <td><%= r_amt  %></td>
+                </tr>
+
+                <tr>
+                    <td>Transaction Reference</td>
+                    <td><%= r_txnref  %></td>
+                </tr>
+
+                <tr>
+                    <td>Payment Reference</td>
+                    <td><%= r_payRef %></td>
+                </tr>
+
+                <tr>
+                    <td>Response Code</td>
+                    <td><%= r_resp %></td>
+                </tr>
+
+                <tr>
+                    <td>Response Description</td>
+                    <td><%= r_desc %></td>
+                </tr>
+
+        </table>
+
+        <h2>Confirmation Leg Server Response</h2>
+        <table>
+        <% 
+            if (c_respCode == 00){
+            
+         %>
+             <h4><font color='#009f00'>Transaction successful</font></h4>
+                    <tr>
+                        <td>Amount</td>
+                        <td><%= c_amt  %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Transaction Reference</td>
+                        <td><%= c_transRef %></td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>Payment Reference</td>
+                        <td><%= c_ref %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Response Code</td>
+                        <td><%= c_respCode %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Response Description</td>
+                        <td><%= c_respDsc %></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>Transaction Date</td>
+                        <td><%= c_date %></td>
+                    </tr>
+                    
+            <%        
+            }else{
+            %>
+            <h4><font color='#ff0000'>Transaction not successful</font></h4>
+                <tr>
+                    <td>Amount</td>
+                    <td><%= c_amt  %></td>
+                </tr>
+
+                <tr>
+                    <td>Transaction Reference</td>
+                    <td><%= c_transRef %></td>
+                </tr>
+
+
+                <tr>
+                    <td>Response Code</td>
+                    <td><%= c_respCode %></td>
+                </tr>
+
+                <tr>
+                    <td>Response Description</td>
+                    <td><%= c_respDsc %></td>
+                </tr>
+
+                
+                <tr>
+                    <td>Transaction Date</td>
+                    <td><%= c_date %></td>
+                </tr>
+            <%
+                 }   
+
+            %>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <!-- <td><a href="javascript:history.go(-2)">Back to Checkout</a></td> -->
+                    <td><a href="/dashboard">To Dashboard</a></td>
+                    
+        </table>  
+
+    </body>
+</html>

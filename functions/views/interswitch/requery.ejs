@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>STOW: Retry Payment</title>
+    </head>
+    <body>
+        
+        <h3>STOW: Retry Transaction</h3>
+        <form method="post" action="/api/interswitch/requery_response">
+            <table>
+                <tr>
+                    <td>Transaction Reference</td> 
+                    <td><input name="txn_ref" type="text"  /></td>
+                </tr>
+                
+                <tr>
+                    <td>Amount</td> 
+                    <td><input name="amount" type="text" /></td>    
+                </tr>
+
+                <tr>
+                <td colspan="2"><input type="Submit" value="ReQuery"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><img src="images/isw_logo.png"/></td>
+                </tr>
+            </table>
+        </form>
+        
+        <a href="/dashboard">Home</a>
+
+    </body>
+</html>

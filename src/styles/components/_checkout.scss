@@ -1,0 +1,73 @@
+
+.checkoutStepperButtons {
+	display: flex!important;
+    	justify-content: space-between!important;
+    }
+
+    .checkoutAgreementPDF {
+    	height: auto!important;
+        justify-content: center;
+        display: flex;
+    }
+
+    .checkoutAgreementPDF>canvas {
+        width: 100vw!important;
+        height: auto!important;
+    }
+
+    .checkoutPaymentBtn {
+        width: 70%;
+        display: block!important;
+        padding: 2px!important;
+        margin: 1em auto;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1)!important;
+        background-image: url(https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*fMOFSpRXMxsAAAAAAAAAAABkARQnAQ)!important;
+        background-repeat: no-repeat!important;
+        background-position: 100% 100%!important;
+        transition: box-shadow 0.45s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1)!important;
+    }
+    .checkoutPaymentInput {
+        width: 70%!important;
+        display: block!important;
+        padding: 4px!important;
+        margin: 1em auto;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08)!important;
+        background-image: url(https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*fMOFSpRXMxsAAAAAAAAAAABkARQnAQ)!important;
+        background-repeat: no-repeat!important;
+        background-position: 100% 100%!important;
+        transition: box-shadow 0.45s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1)!important;
+    }
+
+    .checkoutPaymentMethodBtn {
+        width: 70%!important;
+        margin: 1em auto!important;
+    }
+
+    .checkoutPaymentBtnSelected {
+    	background-color: #7cc244!important;
+    }
+
+    .checkoutPaymentBtnsContainer {
+    	display: flex;
+    	flex-direction: column;
+      	justifyContent: flex-start;
+    }
+
+    .ctaTitle{
+    	color: #1890ff;
+    }
+
+    @media (max-width: 767px) {
+    	.checkoutPaymentBtnsContainer {
+    		margin-top: 1em!important;
+    	  	width: 100%;
+    	}
+
+        .checkoutAgreementPDF>canvas {
+            width: 100vw!important;
+        }
+    }
+
+    .react-images__footer__caption{
+        display:none!important;
+    }

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>STOW: Interswitch</title>
+    </head>
+    <body>
+        
+        <h2>STOW: Payment Form</h2>
+        <form method="POST" action="/api/interswitch/payment">
+            <table>
+                <tr>
+                    <td>Customer Name</td>
+                    <td><input type="text" name="user"/></td>
+                </tr>
+                <tr>
+                    <td>Amount</td>
+                    <td><input type="text" name="amt"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" value="Continue"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><img src="https://firebasestorage.googleapis.com/v0/b/stow-62251.appspot.com/o/web%2Fassets%2Fimg%2Fisw_logo.png?alt=media&token=3c1a4880-5241-4143-b7f3-9bb179fa144a"/></td>
+                </tr>
+            </table>
+        </form>
+    
+        <a href= "/api/interswitch/requery">Retry the previous transaction</a>
+            
+    <hr>
+           
+        
+    </body>
+</html>

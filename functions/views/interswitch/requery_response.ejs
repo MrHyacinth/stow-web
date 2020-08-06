@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>STOW: ReQuery Page</title>
+    </head>
+    <body>
+       
+        <h2>STOW: ReQuery Server Response</h2>
+        <table>
+        <% 
+            if (c_respCode == 00){
+            
+         %>
+             <h4><font color='#009f00'>Transaction successful</font></h4>
+                    <tr>
+                        <td>Amount</td>
+                        <td><%= c_amt  %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Transaction Reference</td>
+                        <td><%= c_transRef %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Payment Reference</td>
+                        <td><%= c_ref %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Response Code</td>
+                        <td><%= c_respCode %></td>
+                    </tr>
+
+                    <tr>
+                        <td>Response Description</td>
+                        <td><%= c_respDsc %></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>Transaction Date</td>
+                        <td><%= c_date %></td>
+                    </tr>
+                    
+            <%        
+            }else{
+            %>
+            <h4><font color='#ff0000'>Transaction not successful</font></h4>
+                <tr>
+                    <td>Amount</td>
+                    <td><%= c_amt  %></td>
+                </tr>
+
+                <tr>
+                    <td>Transaction Reference</td>
+                    <td><%= c_transRef %></td>
+                </tr>
+
+
+                <tr>
+                    <td>Response Code</td>
+                    <td><%= c_respCode %></td>
+                </tr>
+
+                <tr>
+                    <td>Response Description</td>
+                    <td><%= c_respDsc %></td>
+                </tr>
+
+                
+                <tr>
+                    <td>Transaction Date</td>
+                    <td><%= c_date %></td>
+                </tr>
+            <%
+                 }   
+
+            %>
+            </table>
+            <h4><a href="/dashboard">Home</a></h4>
+    </body>
+</html>

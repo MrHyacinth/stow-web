@@ -1,0 +1,63 @@
+th, td {
+    font-family: 'Rubik', sans-serif!important;
+    
+}
+
+h2 > .currency {
+    color: #0288D1;
+    font-family: 'Rubik', sans-serif!important;
+
+}
+
+.principal {
+    color: #0288D1;
+    font-family: 'Rubik', sans-serif!important;
+
+}
+
+.interest {
+    color: #EF6C00;
+    font-family: 'Rubik', sans-serif!important;
+
+}
+
+.bar {
+    display: inline-block;
+    border: none;
+    height: 8px;
+}
+
+.bar.principal {
+    background-color: #0288D1;
+    margin-right:.5px;
+}
+
+.bar.interest {
+    background-color: #EF6C00;
+    margin-left:.5px;
+}
+
+.stretch {
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.currency::before {
+    content:"₦";
+}
+
+.left {
+    text-align: left;
+}
+
+/*
+.calculateBtnWrapper {
+    display: flex!important;
+    justify-content: flex-end!important;
+}*/

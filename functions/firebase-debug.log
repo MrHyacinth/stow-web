@@ -1,0 +1,16 @@
+[debug] [2020-06-16T00:08:29.579Z] ----------------------------------------------------------------------
+[debug] [2020-06-16T00:08:29.580Z] Command:       /usr/local/bin/node /Users/aolowude/.npm-global/bin/firebase serve
+[debug] [2020-06-16T00:08:29.580Z] CLI Version:   8.4.2
+[debug] [2020-06-16T00:08:29.580Z] Platform:      darwin
+[debug] [2020-06-16T00:08:29.580Z] Node Version:  v12.16.3
+[debug] [2020-06-16T00:08:29.584Z] Time:          Tue Jun 16 2020 01:08:29 GMT+0100 (West Africa Standard Time)
+[debug] [2020-06-16T00:08:29.584Z] ----------------------------------------------------------------------
+[debug] [2020-06-16T00:08:29.584Z] 
+[debug] [2020-06-16T00:08:29.594Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-16T00:08:29.594Z] > authorizing via signed-in user
+[debug] [2020-06-16T00:08:29.594Z] [iam] checking project stow-62251 for permissions ["firebase.projects.get"]
+[debug] [2020-06-16T00:08:29.597Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/stow-62251:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-06-16T00:08:30.906Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Jun 2020 00:08:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1139","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-16T00:08:30.911Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/stow-62251  
+ 

@@ -1,0 +1,300 @@
+/*
+.queue-anim-leaving {
+  // position: absolute !important;
+  // width: 100%;
+} 
+*/
+
+.video {
+  max-width: 800px;
+}
+
+#react-content {
+  min-height: 100%;
+}
+.home-page-wrapper p {
+  padding: 0;
+  margin: 0;
+}
+
+/* pricing!.less */
+
+.pricing1-name {
+  color: #eaeaea!important;
+}
+.pricing1-money {
+  color: #ffffff!important;
+  font-weight: 500!important;
+}
+
+.pricing1-wrapper {
+  min-height: 360px;
+  .pricing1 {
+    >p {
+      text-align: center;
+    }
+    &-content-wrapper {
+      min-height: 400px;
+    }
+    &-block-box {
+      max-width: 410px;
+      border-radius: 4px;
+      background: #eef0f3;
+      text-align: center;
+      color: #667;
+      min-height: 400px;
+      margin: auto;
+      border: 1px solid transparent;
+      &.active {
+        border-color: $primary;
+        background: #fff;
+        .pricing1 {
+          &-top-wrapper {
+            background: $primary;
+          }
+          &-name,
+          &-money,
+          &-button {
+            color: #fff;
+          }
+          &-button {
+            background: $primary;
+          }
+        }
+      }
+    }
+    &-block {
+      margin-bottom: 24px;
+    }
+    &-top-wrapper {
+      width: 100%;
+      padding: 16px 24px;
+    }
+    &-name {
+      font-size: 14px;
+    }
+    &-money {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 32px;
+      color: #666;
+    }
+    &-content {
+      font-size: 1em;
+      line-height: 2;
+      font-weight: 400;
+      margin: 1.5em 0.5em;
+    }
+    &-line {
+      display: block;
+      height: 1px;
+      background: #d9d9d9;
+      margin: 0 12px;
+    }
+    &-button-wrapper {
+      margin: 18px 24px;
+    }
+    &-button {
+      padding: 0 24px;
+    }
+  }
+  &.home-page-wrapper {
+    .pricing1-title-wrapper {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  }
+}
+
+.pricing1-money, .pricing1-content>p {
+  margin: 0.3em!important;
+}
+
+@media screen and (max-width: 767px) {
+  .pricing1-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+
+/* pricing.less END */
+
+/* custom.less START */
+
+$line-color: #e9e9e9;
+
+$shadow-color: rgba(0, 0, 0, 0.15);
+
+$bottom-bar-bg-color: #262626;
+$bottom-bar-line-color: #000;
+
+$template-bg-color: #001529;
+$template-bg-color-light: #ececec;
+$template-nav-bg-color: #001529;
+$template-text-color: #ccc;
+$template-text-title-color: #bcbcbc;
+$template-text-color-light: #fff;
+$template-footer-text-color: #999;
+
+$animate-duration: 45s;
+
+/* 详细页图片或框框的样式;
+*/
+@mixin page-shadow(){
+  box-shadow: 0 5px 8px $shadow-color;
+}
+
+@mixin page-pro(){
+  border-radius: 6px;
+  border: 1px solid $line-color;
+  transform: translateY(0);
+  transition: transform .3s $ease-out, box-shadow .3s $ease-out;
+  &:hover {
+    @include page-shadow();
+    transform: translateY(-5px);
+  }
+}
+
+/* custom.less END */
+
+/* content.less END */
+
+.home-page-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .home-page {
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    will-change: transform;
+  }
+  .title-wrapper > h1, > h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .title-wrapper {
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+}
+
+.home-page {
+  padding: 4px 8px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .home-page-wrapper {
+    .home-page {
+      padding: 4px 8px;
+      >h1 {
+        font-size: 21px;
+        &.title-h1 {
+          margin-bottom: 4px;
+        }
+      }
+      >p {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+/* content.less END */
+
+
+.feature7 {
+  &-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f7f9fc;
+
+    &.home-page-wrapper {
+      .home-page {
+      }
+    }
+  }
+
+  &-title {
+
+    &-wrapper {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    &-h1 {
+      font-size: 32px;
+      color: $primary;
+    }
+
+    &-content {
+      margin-top: 16px;
+    }
+  }
+
+  &-block {
+    margin-top: 28px;
+
+    &-group {
+      display: block;
+      padding: 18px 14px;
+      box-shadow: 0 2px 16px fade(#000, 8);
+      background-image: url('https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*fMOFSpRXMxsAAAAAAAAAAABkARQnAQ');
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      transition: box-shadow 5s ease-in, transform 5s ease-in;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px fade(#000, 12);
+      }
+    }
+
+    &-image {
+      float: left;
+      width: 16px;
+    }
+
+    &-title {
+      font-size: 12px;
+      float: left;
+      margin-left: 12px;
+      margin-bottom: 2px;
+      color: $primary;
+    }
+
+    &-content {
+      clear: both;
+      color: fade($primary, 75);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature7-wrapper {
+    min-height: 1540px;
+    &.home-page-wrapper {
+      .home-page {
+        padding: 56px 24px;
+      }
+    }
+  }
+}
+
+.title, .feature7-block-title {
+  font-size: 1.1em!important;
+  margin-top: 0.4em!important;  
+}
+
+
+.feature7-block-image {
+  width: 1.2em!important;
+  margin-top:0.4em!important;
+  margin-left: 0.2em!important;
+}
+
+.MuiStepper-root {
+  padding: 2px 12px 24px 12px!important;
+}
