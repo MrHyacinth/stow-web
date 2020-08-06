@@ -129,6 +129,7 @@ class AccountSettings extends Component {
   };
 
   render() {
+    // made some changes here
     const { user } = this.props;
     const { uid, displayName, dob, email, phone, gender } = user;
 
